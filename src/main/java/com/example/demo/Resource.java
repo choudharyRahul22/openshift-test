@@ -27,11 +27,11 @@ public class Resource {
 		IgniteCache<Integer, String> objIgniteCache = objIgnite.getOrCreateCache("irisCache");
 		
 		// Populating the cache with few values
-		/*System.out.println("**************Start putting data into ignite cache**************");
+		System.out.println("**************Start putting data into ignite cache**************");
 		objIgniteCache.put(1, "iris-ui");
 		objIgniteCache.put(2, "iris-spring");
 		objIgniteCache.put(3, "iris-ignite");
-		objIgniteCache.put(4, "iris-oracle");*/
+		objIgniteCache.put(4, "iris-oracle");
 
 		// Get these items from cache
 		System.out.println("**************Start fetching data from ignite cache**************");
