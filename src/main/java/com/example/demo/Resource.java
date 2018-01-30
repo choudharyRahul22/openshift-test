@@ -22,7 +22,7 @@ public class Resource {
 		
 		Ignition.setClientMode(true);
 
-		Ignite objIgnite = Ignition.start();
+		Ignite objIgnite = Ignition.start("default-config.xml");
 
 		IgniteCache<Integer, String> objIgniteCache = objIgnite.getOrCreateCache("irisCache");
 		
