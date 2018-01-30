@@ -22,7 +22,7 @@ public class Resource {
 		
 		Ignition.setClientMode(true);
 
-		Ignite objIgnite = Ignition.start("C:\\Optum\\IgniteEbookPractice\\apache-ignite-fabric-2.3.0-bin\\examples\\config\\iris-poc-config.xml");
+		Ignite objIgnite = Ignition.start();
 
 		IgniteCache<Integer, String> objIgniteCache = objIgnite.getOrCreateCache("irisCache");
 		
